@@ -75,8 +75,8 @@ function verificarChute(){
         exibirTexto('#texto__subtitulo',`Tentativas: ${tentativaLimite}`),
         exibirTexto('#texto__paragrafo', 'O Número Secreto é maior!'),
         limparCampo()) // se o chute for menor que o número secreto vai fazer essa linha de comando.  
-
-        tentativaLimite <= 0 ? 
+        
+        tentativaLimite <= 0 ? // tentativa limite é menor que 0? Se for, a pessoa perde e não irá poder mais chutar e nem inserir novos números, se não, irá exibir a quantidade de tentativas restantes.
         (exibirTexto('#texto__subtitulo',`Tentativas: ${tentativaLimite}`),
         exibirTexto('#texto__paragrafo', 'Você Perdeu :('),
         document.getElementById("chutar").disabled = true,
