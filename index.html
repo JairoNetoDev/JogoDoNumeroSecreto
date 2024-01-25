@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jairo Williams Guedes Lopes Neto">
+    <meta name="description" content="Jogo do Número Secreto. Projeto Final do Curso da Alura de Lógica de Programação, em parceria com a Oracle Next Education">
+    <meta name="keywords" content="Alura, ONE, Oracle Next Education, HTML, CSS, JS, JavaScript, Lógica de Programação">
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>JS Game</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1 class="texto__titulo" id="texto__titulo"></h1>
+                    <h2 class="texto__subtitulo" id="texto__subtitulo"></h2>
+                    <p class="texto__paragrafo" id="texto__paragrafo"></p>
+                </div>
+                <input type="number" min="1" max="" class="container__input" id="numMaximo" placeholder="Insira aqui">
+                <div class="chute container__botoes">
+                    <button onclick="verificarChute()" id="chutar" class="container__botao">Chutar</button>
+                    <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao">Novo jogo</button>
+                </div>
+            </div>
+            <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
